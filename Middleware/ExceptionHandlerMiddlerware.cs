@@ -27,7 +27,7 @@ namespace TailwindApi.Middleware
             {
                 var errorId = Guid.NewGuid();
                 // Log This Exception 
-                _logger.LogError(ex, $"{errorId} THIS IS EXCEPTION {ex.Message}");
+                _logger.LogError(ex, $"{errorId}:{ex.Message}");
 
                 // Return A Custom Error Resoponse
 
