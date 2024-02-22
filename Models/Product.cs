@@ -10,7 +10,7 @@ namespace TailwindApi.Models
     public class Product
     {
         [JsonProperty(PropertyName = "id")]
-        public string? Id { get; set; }// =  Guid.NewGuid().ToString();
+        public string? Id { get; set; } =  Guid.NewGuid().ToString();
         public string? Name { get; set; }
         [JsonProperty("brand")]
         public Brand? Brand { get; set; }
